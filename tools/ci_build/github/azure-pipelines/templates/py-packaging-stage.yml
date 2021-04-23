@@ -8,7 +8,7 @@ parameters:
 - name: enable_linux_cpu
   displayName: 'Whether Linux CPU package is built.'
   type: boolean
-  default: ${{ vraiables.do_enable_linux_cpu }}
+  default: $(do_enable_linux_cpu)
 
 - name: enable_linux_gpu
   displayName: 'Whether Linux GPU package is built.'
@@ -23,7 +23,7 @@ parameters:
 - name: enable_windows_cpu
   displayName: 'Whether Windows CPU package is built.'
   type: boolean
-  default: ${{ vraiables.do_enable_windows_cpu }}
+  default: $(do_enable_windows_cpu)
 
 - name: enable_windows_gpu
   displayName: 'Whether Windows GPU package is built.'
