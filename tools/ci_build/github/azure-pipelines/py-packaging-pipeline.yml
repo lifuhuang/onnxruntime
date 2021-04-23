@@ -1,15 +1,11 @@
 trigger: none
 
-parameters:
+variables:
 - name: do_enable_linux_cpu
-  displayName: 'Build Linux CPU package'
-  type: boolean
-  default: false
+  value: false
 
 - name: do_enable_windows_cpu
-  displayName: 'Build Windows CPU package'
-  type: boolean
-  default: true
+  value: true
 
 stages:
 - template: templates/py-packaging-stage.yml
